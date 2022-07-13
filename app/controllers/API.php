@@ -4,7 +4,7 @@ class API extends Controller
     public function __construct()
     {
         if(!isLoggedIn()){
-            header('Location: /MVC/Login');
+            header('Location: /pkmndraft/Login');
         }
         //https://date.nager.at/api/v2/publicholidays/2022/CA
     }

@@ -22,7 +22,7 @@ class Login extends Controller
                 $secret = $user->secret;
                 $code = $_POST['code'];
                 if(password_verify($password,$hashed_pass)){
-                    //echo '<meta http-equiv="Refresh" content="2; url=/MVC/">';
+                    //echo '<meta http-equiv="Refresh" content="2; url=/pkmndraft/">';
                     //if($user->secret != null){
                     //    if(!empty($code)) {
                     //        if(check($secret, $code)){
@@ -100,7 +100,7 @@ class Login extends Controller
                           <span class="sr-only">Please wait creating the account for '.trim($_POST["username"]).'</span>
                         </div>
                       </div>';
-                        echo '<meta http-equiv="Refresh" content="2; url=/MVC/Login/">';
+                        echo '<meta http-equiv="Refresh" content="2; url=/pkmndraft/Login/">';
                  }
                 } 
             }
@@ -144,6 +144,6 @@ class Login extends Controller
     public function logout(){
         unset($_SESSION['user_id']);
         session_destroy();
-        echo '<meta http-equiv="Refresh" content="1; url=/MVC/Login/">';
+        echo '<meta http-equiv="Refresh" content="1; url=/pkmndraft/Login/">';
     }
 }

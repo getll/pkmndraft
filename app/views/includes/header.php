@@ -27,16 +27,16 @@
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav me-auto">
       <li class="nav-item">
-      <a class="nav-link" href="/MVC/Home">Home</a>
+      <a class="nav-link" href="/pkmndraft/Home">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/MVC/User">User</a>
+      <a class="nav-link" href="/pkmndraft/User">User</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/MVC/Contact">Contact</a>
+      <a class="nav-link" href="/pkmndraft/Contact">Contact</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/MVC/API">API</a>
+      <a class="nav-link" href="/pkmndraft/API">API</a>
     </li>
 
       </ul>
@@ -44,12 +44,12 @@
     <ul class="nav navbar-nav navbar-right">
     <?php
     if (isLoggedIn()) {
-      echo '<li class="nav-item"><a class="nav-link" href="/MVC/TwoFA/Setup"><i class="fa fa-key" aria-hidden="true"></i> 2FA </a></li>';
-      echo '<li class="nav-item"><a class="nav-link" href="/MVC/Login/logout"><i class="fa-solid fa-sign-out"></i> Logout  '. $_SESSION['user_username'].'</a></li>';
+      echo '<li class="nav-item"><a class="nav-link" href="/pkmndraft/TwoFA/Setup"><i class="fa fa-key" aria-hidden="true"></i> 2FA </a></li>';
+      echo '<li class="nav-item"><a class="nav-link" href="/pkmndraft/Login/logout"><i class="fa-solid fa-sign-out"></i> Logout  '. $_SESSION['user_username'].'</a></li>';
     } 
     else {
-      echo '<li class="nav-item"><a class="nav-link" href="/MVC/Login/Create"><i class="fa-solid fa-user-plus"></i> Sign Up</a></li>
-          <li class="nav-item"><a class="nav-link" href="/MVC/Login/"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>';
+      echo '<li class="nav-item"><a class="nav-link" href="/pkmndraft/Login/Create"><i class="fa-solid fa-user-plus"></i> Sign Up</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pkmndraft/Login/"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>';
     }
     ?>
   </ul>

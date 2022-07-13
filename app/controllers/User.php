@@ -4,7 +4,7 @@
         public function __construct(){
             $this->userModel = $this->model('userModel');
             if(!isLoggedIn()){
-                header('Location: /MVC/Login');
+                header('Location: /pkmndraft/Login');
             }
         }
 
@@ -35,8 +35,8 @@
                
                 if($this->userModel->createUser($data)){
                     echo 'Please wait we are creating the user for you!';
-                    header('Location: /MVC/User/getUsers');
-                    //echo '<meta http-equiv="Refresh" content="2; url=/MVC/User/getUsers">';
+                    header('Location: /pkmndraft/User/getUsers');
+                    //echo '<meta http-equiv="Refresh" content="2; url=/pkmndraft/User/getUsers">';
                 }
 
             }
@@ -95,8 +95,8 @@
                 ];
                 if($this->userModel->updateUser($data)){
                     echo 'Please wait we are upating the user for you!';
-                    //header('Location: /MVC/User/getUsers');
-                    echo '<meta http-equiv="Refresh" content="2; url=/MVC/User/getUsers">';
+                    //header('Location: /pkmndraft/User/getUsers');
+                    echo '<meta http-equiv="Refresh" content="2; url=/pkmndraft/User/getUsers">';
                 }
                 
             }
@@ -108,8 +108,8 @@
             ];
             if($this->userModel->delete($data)){
                 echo 'Please wait we are deleting the user for you!';
-                //header('Location: /MVC/User/getUsers');
-                echo '<meta http-equiv="Refresh" content=".2; url=/MVC/User/getUsers">';
+                //header('Location: /pkmndraft/User/getUsers');
+                echo '<meta http-equiv="Refresh" content=".2; url=/pkmndraft/User/getUsers">';
             }
 
         }

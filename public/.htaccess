@@ -2,7 +2,7 @@ Options -MultiViews
 
 RewriteEngine on
 
-RewriteBase /MVC/public
+RewriteBase /pkmndraft/public
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f

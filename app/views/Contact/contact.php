@@ -12,7 +12,7 @@
     </div>
     <div class='mt-2'> 
         <button type="submit" name="login" class="btn btn-primary">Sign in</button>
-        <p class="text-center">Not registered yet? <a href="/MVC/Login/Create">Sign Up</a> </p>
+        <p class="text-center">Not registered yet? <a href="/pkmndraft/Login/Create">Sign Up</a> </p>
     </div>
     <?php
 

@@ -7,10 +7,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="/MVC/User/getUsers">Get Users</a>
+        <a class="nav-link" href="/pkmndraft/User/getUsers">Get Users</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/MVC/User/createUser">Create User</a>
+        <a class="nav-link" href="/pkmndraft/User/createUser">Create User</a>
 </li>
      
     </ul>
@@ -39,13 +39,13 @@
                 echo"<td>$user->City</td>";
                 echo"<td>$user->Phone</td>";
                 echo"<td>
-                <a href='/MVC/User/details/$user->ID'> Details</a>
+                <a href='/pkmndraft/User/details/$user->ID'> Details</a>
                 </td>";
                 echo"<td>
-                <a href='/MVC/User/update/$user->ID'> Update</a>
+                <a href='/pkmndraft/User/update/$user->ID'> Update</a>
                 </td>";
                 echo"<td>
-                <a href='/MVC/User/delete/$user->ID'> Delete</a>
+                <a href='/pkmndraft/User/delete/$user->ID'> Delete</a>
                 </td>";
                 echo"</tr>";
 

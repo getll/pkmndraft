@@ -28,7 +28,7 @@
 
     
     <button type="submit" name="signup" class="btn btn-primary mt-2"> Sign up</button>
-    <p class="text-center">Already registered? <a href="/MVC/Login/">Login</a> </p>
+    <p class="text-center">Already registered? <a href="/pkmndraft/Login/">Login</a> </p>
 
     <?php
 
