@@ -1,7 +1,7 @@
 <?php require APPROOT . '/views/includes/header.php'; 
 ?>
-    <h1>Home View</h1>
-    <p>This view is invoked by HomeController</p>
+    <h1>Home</h1>
+    <p>info</p>
 
     <?php
         if($data != []){
@@ -10,4 +10,11 @@
           </div>';
         }
     ?>
+
+    <h1>Current Draft</h1>
+    <p>info</p>
+    
+    <h1>Random Replay</h1>
+    <p>info</p>
+
 <?php require APPROOT . '/views/includes/footer.php'; ?>

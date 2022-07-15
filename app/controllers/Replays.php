@@ -1,5 +1,5 @@
 <?php
-class Contact extends Controller
+class Replays extends Controller
 {
     public function __construct()
     {
@@ -7,6 +7,6 @@ class Contact extends Controller
 
     public function index()
     {
-        $this->view('Contact/contact');
+        $this->view('Replays/index');
     }
 }

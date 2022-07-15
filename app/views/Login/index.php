@@ -1,36 +1,30 @@
 <?php require APPROOT . '/views/includes/header.php';  ?>
 
+<form method="post" action="">
+    <div class="mb-3" >
+        <label for="teamName" class="form-label">Team</label>
+        <select id="teamName" class="form-select">
+            <option>team 1</option>
+            <option>team 2</option>
+            <option>team 3</option>
+            <option>team 4</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Login</button>
 
-
-<form class="px-4 py-3" method="post" action="">
-    <div class="form-group">
-        <label for="username">Username</label>
-        <input type="text" class="form-control" id="username" name="username" placeholder="Username">
-    </div>
-    <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
-    </div>
-    <div class="form-group">
-        <label for="code">Code</label>
-        <input type="numeber" class="form-control" id="code" name="code" placeholder="Code">
-    </div>
-    <div class='mt-2'> 
-        <button type="submit" name="login" class="btn btn-primary">Sign in</button>
-        <p class="text-center">Not registered yet? <a href="/pkmndraft/Login/Create">Sign Up</a> </p>
-    </div>
     <?php
-
-    if($data != []){
-        echo '<div class="alert alert-danger" role="alert">'.
-            $data['msg'].'
-        </div>';
-    }
-
-?>
-
+        if($data != []){
+            echo 
+                '<div class="alert alert-danger" role="alert">'.
+                    $data['msg'].
+                '</div>';
+        }
+    ?>
 </form>
-
-
 
 <?php require APPROOT . '/views/includes/footer.php'; ?>
